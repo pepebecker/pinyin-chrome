@@ -8,7 +8,6 @@ window.onload = (event) => {
 	}, (text) => {
 		api.convert(text)
 		.then((res) => {
-			console.log(res)
 			document.querySelector('h1').innerHTML = res
 		})
 		.catch(console.error)
