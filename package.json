@@ -1,0 +1,30 @@
+{
+  "name": "pinyin-chrome",
+  "version": "1.0.0",
+  "description": "Chrome extension to convert Chinese characters to Pinyin.",
+  "main": "app/script.js",
+  "files": [
+    "app"
+  ],
+  "scripts": {
+    "browserify": "browserify app/script.js > app/bundle.js",
+    "watchify": "watchify app/script.js -o app/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pepebecker/pinyin-chrome"
+  },
+  "author": "Pepe Becker <mail@pepebecker.com> (http://pepebecker.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pepebecker/pinyin-chrome/issues"
+  },
+  "homepage": "https://github.com/pepebecker/pinyin-chrome#readme",
+  "devDependencies": {
+    "browserify": "^14.3.0",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "pinyin-api": "pepebecker/pinyin-api"
+  }
+}
